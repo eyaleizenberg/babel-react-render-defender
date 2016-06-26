@@ -1,4 +1,4 @@
-# babel-react-render-defender
+# Babel React Render Defender
 
 <img src="http://i.imgur.com/XSjJMKR.png" />
 
