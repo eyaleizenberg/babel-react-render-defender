@@ -1,0 +1,21 @@
+{
+  "author": {
+    "email": "eyal.eizenberg@samanage.com",
+    "name": "Eyal Eizenberg"
+  },
+  "dependencies": {
+    "babel-plugin-react-transform": "^2.0.2",
+    "react-render-defender": "1.0.0"
+  },
+  "description": "Babel render defender",
+  "devDependencies": {},
+  "directories": {},
+  "homepage": "https://github.com/eyaleizenberg/babel-react-render-defender",
+  "installable": true,
+  "license": "MIT",
+  "main": "index.js",
+  "name": "babel-react-render-defender",
+  "optionalDependencies": {},
+  "scripts": {},
+  "version": "1.0.0"
+}
