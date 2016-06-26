@@ -1,6 +1,14 @@
 # babel-react-render-defender
 
+<img src="http://i.imgur.com/XSjJMKR.png" />
+
 Babel preset for react-render-defender.
+
+## What does it do?
+
+React Render Defender lets you know when any React component has rendered twice in less than 200ms. This helps you find components which render when they really shouldn't. If a component has rendered twice in the specified time, you will see a message in the console like this:
+
+ <img src ="http://i.imgur.com/ozLuEqQ.png" />
 
 ## Install
 
@@ -34,11 +42,15 @@ webpackConfig.module.loaders = [{
   query: {
     cacheDirectory: true,
     presets: __DEV__
-      ? ['es2015', 'react', 'stage-0', 'react-hmre', 'babel-render-defender']
+      ? ['es2015', 'react', 'stage-0', 'react-hmre', 'babel-react-render-defender']
       : ['es2015', 'react', 'stage-0']
   }
 },
 ```
+
+## Additional Settings
+
+The default threshold is 200ms. If you want to change it, somewhere in your component (for example in componentWillMount) specify: ```this.warningThreshold = 100```
 
 
 
