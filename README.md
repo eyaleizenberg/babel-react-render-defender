@@ -50,8 +50,24 @@ webpackConfig.module.loaders = [{
 
 ## Additional Settings
 
-The default threshold is 200ms. If you want to change it, somewhere in your component (for example in componentWillMount) specify: ```this.warningThreshold = 100```
+The default threshold is 200ms. If you want to change it or go into quiet mode, do the following:
+1. In your root directory create a file called: ```rdefender.json```
+2. In your file specify the constructor name of the component of which you want to change the threshold:
 
+```json
+{
+  "LogCallForm" : 200
+}
+```
+
+3. If you want to go into 'quiet mode' for a little while, add ```"quiet_mode": true``` to the file (don't forget to remove it when you are done with your heavy debugging):
+
+```json
+{
+  "LogCallForm" : 200,
+  "quiet_mode": true
+}
+```
 
 
 Thanks to Alex Nudelman & Boris Nadion for their help.
